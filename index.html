@@ -338,7 +338,7 @@ video {
 
 <div id="credits" class="section">
   <div class="glory-frame" id="gloryFrame">
-    <img id="gloryImage" src="videos/glory.jpg" alt="Glory Photo">
+    <img id="gloryImage" src="https://nowallee.github.io/operation-vltd/videos/glory.jpg" alt="Glory Photo">
     <div class="glory-placeholder" id="gloryPlaceholder" style="display:none">📸</div>
   </div>
   <p>Designed by you very glorious beauteous handsome amazing boyfriend.</p>
@@ -348,7 +348,7 @@ video {
 <!-- INTRO -->
 <div id="intro" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
-  <video src="videos/intro.mp4" id="introVideo" controls preload="metadata" type="video/mp4"></video>
+  <video src="https://nowallee.github.io/operation-vltd/videos/intro.mp4" id="introVideo" controls preload="metadata" type="video/mp4"></video>
   <p id="introError" style="color:red;font-size:12px;display:none;margin-top:10px;"></p>
   <br>
   <button id="skipBtn" style="display:none" onclick="show('map')">Skip</button>
@@ -413,7 +413,7 @@ together.
 <div id="finalVideo" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
   <button id="skipFinal" style="position:absolute;right:20px;top:18px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.06);color:var(--muted);" onclick="skipFinal()">Skip</button>
-  <video id="finalVideoPlayer" src="videos/final.mp4" controls type="video/mp4"></video>
+  <video id="finalVideoPlayer" src="https://nowallee.github.io/operation-vltd/videos/final.mp4" controls type="video/mp4"></video>
   <p id="finalVideoPlayerError" style="color:red;font-size:12px;display:none;margin-top:10px;"></p>
 </div>
 
@@ -668,7 +668,7 @@ function startLevel(i){
   current = i;
   isSubmitting = false; // Reset submission guard for new level
   // Set video source BEFORE showing the section
-  document.getElementById("levelVideo").src = `videos/day${i+1}.mp4`;
+  document.getElementById("levelVideo").src = `https://nowallee.github.io/operation-vltd/videos/day${i+1}.mp4`;
   show("level");
   document.getElementById("answer").value = "";
   document.getElementById("errorMsg").style.display = "none";
