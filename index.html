@@ -348,7 +348,7 @@ video {
 <!-- INTRO -->
 <div id="intro" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
-  <video src="https://nowallee.github.io/operation-vltd/videos/intro.mp4" id="introVideo" controls preload="metadata" type="video/mp4"></video>
+  <video src="https://drive.google.com/uc?export=download&id=1amGyQcYKDT9LGnY1nQ8D7meCv-6J-uwG" id="introVideo" controls preload="metadata" type="video/mp4"></video>
   <p id="introError" style="color:red;font-size:12px;display:none;margin-top:10px;"></p>
   <br>
   <button id="skipBtn" style="display:none" onclick="show('map')">Skip</button>
@@ -668,10 +668,17 @@ function startLevel(i){
   current = i;
   isSubmitting = false; // Reset submission guard for new level
   // Set video source BEFORE showing the section
-  document.getElementById("levelVideo").src = `https://nowallee.github.io/operation-vltd/videos/day${i+1}.mp4`;
+  const videoUrls = [
+    "https://drive.google.com/uc?export=download&id=1q61-AURDS461MTjLK9UvvzDpCybxIN3t", // Day 1
+    "PLACEHOLDER_DAY2.mp4", // Day 2
+    "PLACEHOLDER_DAY3.mp4", // Day 3
+    "PLACEHOLDER_DAY4.mp4"  // Day 4
+  ];
+  document.getElementById("levelVideo").src = videoUrls[i] || "";
   show("level");
   document.getElementById("answer").value = "";
   document.getElementById("errorMsg").style.display = "none";
+  
   const clues = [
     "Before memory had language, our footsteps landed on the same soil. Where was it?", // Level 1
     "A serene morning by the waves, where the sun rose as we walked side by side. Where did love awaken?", // Level 2 (Beach memory)
