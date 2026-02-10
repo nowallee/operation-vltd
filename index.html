@@ -338,7 +338,7 @@ video {
 
 <div id="credits" class="section">
   <div class="glory-frame" id="gloryFrame">
-    <img id="gloryImage" src="videos/glory.jpg" alt="Glory Photo">
+    <img id="gloryImage" src="https://raw.githubusercontent.com/nowallee/operation-vltd/main/videos/glory.jpg" alt="Glory Photo">
     <div class="glory-placeholder" id="gloryPlaceholder" style="display:none">📸</div>
   </div>
   <p>Designed by you very glorious beauteous handsome amazing boyfriend.</p>
@@ -348,7 +348,7 @@ video {
 <!-- INTRO -->
 <div id="intro" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
-  <video src="videos/intro.mp4" id="introVideo" controls preload="metadata"></video>
+  <video src="https://raw.githubusercontent.com/nowallee/operation-vltd/main/videos/intro.mp4" id="introVideo" controls preload="metadata"></video>
   <br>
   <button id="skipBtn" style="display:none" onclick="show('map')">Skip</button>
 </div>
@@ -411,7 +411,7 @@ together.
 <div id="finalVideo" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
   <button id="skipFinal" style="position:absolute;right:20px;top:18px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.06);color:var(--muted);" onclick="skipFinal()">Skip</button>
-  <video id="finalVideoPlayer" src="videos/final.mp4" controls></video>
+  <video id="finalVideoPlayer" src="https://raw.githubusercontent.com/nowallee/operation-vltd/main/videos/final.mp4" controls></video>
 </div>
 
 <!-- FINAL CHOICE -->
@@ -433,8 +433,8 @@ together.
 
 <div class="skyline"></div>
 <audio id="bgMusic" preload="auto"></audio>
-<audio id="errorSound" src="audio/error.mp4" preload="auto"></audio>
-<audio id="successSound" src="audio/success.mp3" preload="auto"></audio>
+<audio id="errorSound" src="https://raw.githubusercontent.com/nowallee/operation-vltd/main/audio/error.mp4" preload="auto"></audio>
+<audio id="successSound" src="https://raw.githubusercontent.com/nowallee/operation-vltd/main/audio/success.mp3" preload="auto"></audio>
 
 <!-- Mute Button -->
 <button id="muteBtn" class="mute-btn" onclick="toggleMute()">
@@ -654,7 +654,7 @@ function startLevel(i){
   current = i;
   isSubmitting = false; // Reset submission guard for new level
   // Set video source BEFORE showing the section
-  document.getElementById("levelVideo").src = `videos/day${i+1}.mp4`;
+  document.getElementById("levelVideo").src = `https://raw.githubusercontent.com/nowallee/operation-vltd/main/videos/day${i+1}.mp4`;
   show("level");
   document.getElementById("answer").value = "";
   document.getElementById("errorMsg").style.display = "none";
