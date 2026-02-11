@@ -348,8 +348,7 @@ video {
 <!-- INTRO -->
 <div id="intro" class="section">
   <button class="back-btn" onclick="show('start')">Back</button>
-  <video src="https://streamable.com/43bwgs" id="introVideo" controls preload="metadata" type="video/mp4"></video>
-  <p id="introError" style="color:red;font-size:12px;display:none;margin-top:10px;"></p>
+  <video src="videos/intro.mp4" id="introVideo" controls preload="metadata"></video>
   <br>
   <button id="skipBtn" style="display:none" onclick="show('map')">Skip</button>
 </div>
@@ -668,17 +667,10 @@ function startLevel(i){
   current = i;
   isSubmitting = false; // Reset submission guard for new level
   // Set video source BEFORE showing the section
-  const videoUrls = [
-    "https://streamable.com/5yq5eo", // Day 1
-    "PLACEHOLDER_DAY2.mp4", // Day 2
-    "PLACEHOLDER_DAY3.mp4", // Day 3
-    "PLACEHOLDER_DAY4.mp4"  // Day 4
-  ];
-  document.getElementById("levelVideo").src = videoUrls[i] || "";
+  document.getElementById("levelVideo").src = `videos/day${i+1}.mp4`;
   show("level");
   document.getElementById("answer").value = "";
   document.getElementById("errorMsg").style.display = "none";
-  
   const clues = [
     "Before memory had language, our footsteps landed on the same soil. Where was it?", // Level 1
     "A serene morning by the waves, where the sun rose as we walked side by side. Where did love awaken?", // Level 2 (Beach memory)
