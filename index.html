@@ -562,13 +562,6 @@ function isLevelAvailable(i){
   return priorOk && dayOk;
 }
 
-
-// Day locking disabled for testing: simple availability based on progress only
-function todayIndex(){ return new Date().getDay(); }
-function weekdayName(n){ return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][n]||'' }
-function levelAssignedDay(i){ return i + 1 }
-function isLevelAvailable(i){ return i <= progress; }
-
 function show(id){
   document.querySelectorAll('.section').forEach(s => {
     s.classList.remove('active');
