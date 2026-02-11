@@ -549,7 +549,7 @@ function initBGM(){
   playNextSong();
 }
 
-/* Weekday-based locking (temporarily disabled for testing)
+
 // Weekday-based locking: Level 1 -> Monday(1), 2 -> Tuesday(2), 3 -> Wednesday(3), 4 -> Thursday(4)
 function todayIndex(){ return new Date().getDay(); } // 0=Sun,1=Mon...
 function weekdayName(n){ return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][n]||'' }
@@ -561,7 +561,7 @@ function isLevelAvailable(i){
   const dayOk = td >= assigned;
   return priorOk && dayOk;
 }
-*/
+
 
 // Day locking disabled for testing: simple availability based on progress only
 function todayIndex(){ return new Date().getDay(); }
